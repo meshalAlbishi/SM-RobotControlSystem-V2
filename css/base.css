@@ -1,0 +1,49 @@
+/* main base container style */
+
+.main-base {
+    margin-top: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+/* main button styling for the remote control */
+
+.remote-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.remote-btn i {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    justify-content: center;
+}
+
+/* up button div, middle line button div */
+
+.up, .middle {
+    margin-bottom: 1rem;
+}
+
+.stop-btn {
+    margin: 0 1rem;
+}
+
+@media screen and (max-width:415px) {
+    .main-base {
+        width: 300px;
+        margin: 20% 2rem;
+    }
+    .remote-btn {
+        width: 80px;
+        height: 80px;
+    }
+    .remote-btn i {
+        width: 45px;
+        height: 45px;
+        font-size: 45px;
+    }
+}

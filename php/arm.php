@@ -1,4 +1,4 @@
-<div class="main">
+<div class="arm-main">
 
     <!-- title -->
     <div class="header">
@@ -13,17 +13,17 @@
             <div id="sliders">
 
                 <?php
-
                 for ($i = 0; $i < count($engineValues); $i++) {
                 ?>
 
                     <div class="slider-box">
 
-                        <label for="">Engine <?php echo $engineValues[$i][0] ?> </label>
+                        <label for="engine<?php echo $engineValues[$i][0] ?>">Engine <?php echo $engineValues[$i][0] ?> </label>
 
                         <input class="range" type="range" value="<?php echo $engineValues[$i][1] ?>" min="0" max="180" step="90" name="engine<?php echo $engineValues[$i][0] ?>">
 
                         <span class="range-value"><?php echo $engineValues[$i][1] ?></span>
+
                     </div>
 
                 <?php } ?>
@@ -33,8 +33,9 @@
             <!-- buttons -->
             <div class="buttons">
                 <?php echo $enign ?>
-                <button type="submit" name="submit">Save</button>
+                <button class="arm-btn" type="submit" name="submit">Save</button>
                 <input id="power" type="checkbox" <?php echo ($isPower == 1 ? 'checked' : ''); ?>>
+            </div>
 
         </form>
 

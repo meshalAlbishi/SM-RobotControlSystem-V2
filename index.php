@@ -1,5 +1,6 @@
 <?php
-include_once('includes/database.inc.php');
+
+include_once('database/arm.db.php');
 
 $engineValues = getMotorsValue();
 $isPower = getArmPower();
@@ -24,19 +25,44 @@ if (isset($_POST['submit'])) {
     <title>Robot Control System</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/arm.css">
+    <link rel="stylesheet" href="css/base.css">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <?php
-    // include("php/arm.php");
-    // include("php/arm.php");
-    ?>
+    <main>
 
+        <div class="main-base">
 
+            <!-- forward button -->
+            <div class="up">
+                <button class="remote-btn"><i class="far fa-arrow-alt-up"></i></button>
+            </div>
+
+            <!-- middle line buttons(left, stop, right) -->
+            <div class="middle">
+                <button class="remote-btn"><i class="far fa-arrow-alt-left"></i></button>
+                <button class="remote-btn stop-btn"><i class="far fa-stop-circle"></i></button>
+                <button class="remote-btn "><i class="far fa-arrow-alt-right"></i></button>
+            </div>
+
+            <!-- backward button -->
+            <div class="down">
+                <button class="remote-btn "><i class="far fa-arrow-alt-down"></i></button>
+            </div>
+
+        </div>
+
+        <?php
+        include("php/arm.php");
+        ?>
+
+    </main>
 
     <script src="main.js"></script>
 

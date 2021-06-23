@@ -1,12 +1,12 @@
-<div class="arm-main">
+<div class="arm-main container">
 
     <!-- title -->
     <div class="header">
-        <h1>Robot Control System</h1>
+        <h1>Motors Controller</h1>
     </div>
 
     <!-- robot sliders container-->
-    <div class="container">
+    <div>
 
         <form action="index.php" method="POST">
 

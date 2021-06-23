@@ -1,26 +1,3 @@
-.arm-main {
-    margin: 1rem auto;
-    background-color: white;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    width: 400px;
-    overflow: hidden;
-    text-align: center;
-}
-
-/* the title style */
-
-.header {
-    border-bottom: 2px solid black;
-    padding: 1rem 1.875rem;
-    margin-bottom: 0;
-}
-
-.header h1 {
-    margin: 0;
-    color: #111111;
-}
-
 /* slider box style */
 
 .slider-box {
@@ -132,6 +109,6 @@ input[type="checkbox"]:checked::before {
         padding: 1rem 1rem;
     }
     .header h1 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 }

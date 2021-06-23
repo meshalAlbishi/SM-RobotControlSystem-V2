@@ -1,12 +1,3 @@
-/* main base container style */
-
-.main-base {
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-}
-
 /* main button styling for the remote control */
 
 .remote-btn {
@@ -32,10 +23,16 @@
     margin: 0 1rem;
 }
 
+/* remote-panel  style*/
+
+.remote-panel {
+    margin-top: 5.5rem;
+}
+
 @media screen and (max-width:415px) {
     .main-base {
-        width: 300px;
-        margin: 20% 2rem;
+        width: 350px;
+        /* margin: 20% 2rem; */
     }
     .remote-btn {
         width: 80px;
@@ -45,5 +42,9 @@
         width: 45px;
         height: 45px;
         font-size: 45px;
+    }
+    .remote-panel {
+        margin: 1rem 0;
+        padding: 0.5rem;
     }
 }

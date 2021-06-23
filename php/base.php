@@ -1,15 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="main-base container">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <div class="header">
+        <h1>Base Controller</h1>
+    </div>
 
-<body>
+    <form class="remote-panel" action="database/base.db.php" method="POST">
 
-</body>
+        <!-- forward button -->
+        <div class="up">
+            <button name="btnSubmit" value="F" type="submit" class="remote-btn"><i class="far fa-arrow-alt-up"></i></button>
+        </div>
 
-</html>
+        <!-- middle line buttons(left, stop, right) -->
+        <div class="middle">
+            <button name="btnSubmit" value="L" type="submit" class="remote-btn"><i class="far fa-arrow-alt-left"></i></button>
+            <button name="btnSubmit" value="S" type="submit" class="remote-btn stop-btn"><i class="far fa-stop-circle"></i></button>
+            <button name="btnSubmit" value="R" type="submit" class="remote-btn "><i class="far fa-arrow-alt-right"></i></button>
+        </div>
+
+        <!-- backward button -->
+        <div class="down">
+            <button name="btnSubmit" value="B" type="submit" class="remote-btn "><i class="far fa-arrow-alt-down"></i></button>
+        </div>
+
+    </form>
+
+</div>

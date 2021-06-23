@@ -35,36 +35,21 @@ if (isset($_POST['submit'])) {
 
 <body>
 
+
     <main>
 
-        <div class="main-base">
-
-            <form action="database/base.db.php" method="POST">
-
-                <!-- forward button -->
-                <div class="up">
-                    <button name="btnSubmit" value="F" type="submit" class="remote-btn"><i class="far fa-arrow-alt-up"></i></button>
-                </div>
-
-                <!-- middle line buttons(left, stop, right) -->
-                <div class="middle">
-                    <button name="btnSubmit" value="L" type="submit" class="remote-btn"><i class="far fa-arrow-alt-left"></i></button>
-                    <button name="btnSubmit" value="S" type="submit" class="remote-btn stop-btn"><i class="far fa-stop-circle"></i></button>
-                    <button name="btnSubmit" value="R" type="submit" class="remote-btn "><i class="far fa-arrow-alt-right"></i></button>
-                </div>
-
-                <!-- backward button -->
-                <div class="down">
-                    <button name="btnSubmit" value="B" type="submit" class="remote-btn "><i class="far fa-arrow-alt-down"></i></button>
-                </div>
-
-            </form>
-
+        <div class="header">
+            <h1>Robot Control System</h1>
         </div>
 
-        <?php
-        include("php/arm.php");
-        ?>
+        <div class="main">
+
+            <?php
+            include("php/base.php");
+            include("php/arm.php");
+            ?>
+
+        </div>
 
     </main>
 

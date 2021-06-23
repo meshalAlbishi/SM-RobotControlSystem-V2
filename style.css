@@ -10,10 +10,8 @@ body {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 3.3rem auto;
+    margin: 1rem auto;
     padding: 1rem;
     background-color: white;
     border-radius: 7px;
@@ -22,6 +20,11 @@ main {
     max-width: 100%;
     overflow: hidden;
     text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 button {
@@ -46,11 +49,38 @@ button:hover, button:active {
     color: #111;
 }
 
+.container {
+    width: 400px;
+    margin: 1rem auto;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* the title style */
+
+.header {
+    border-bottom: 2px solid black;
+    padding: 1rem 1.875rem;
+    margin-bottom: 0;
+}
+
+.header h1 {
+    margin: 0;
+    color: #111111;
+}
+
 @media screen and (max-width:415px) {
     main {
-        flex-direction: column;
-        justify-content: space-between;
         height: auto;
         width: 350px;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+    .main {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
     }
 }

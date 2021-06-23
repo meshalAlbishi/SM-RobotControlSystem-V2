@@ -30,3 +30,9 @@ The database contains 4 table
     - base id
     - direction
     - Forigen key to the Arm they belong to
+
+
+![](https://github.com/meshalAlbishi/SM-RobotControlSystem-V2/blob/main/db_files/db%20structure.png)
+
+## Demo
+Vedio demo available [here](https://github.com/meshalAlbishi/SM-RobotControlSystem-V2/blob/main/localhost%20demo.mp4)

@@ -3,7 +3,6 @@ This is the second version of [Robot Control Panel](https://github.com/meshalAlb
 
 The First Version was to control the Arm only, in the second version it will control the arm base to make it move (Forward, Backward, Right, Left, Or Stop).
 
-wait for it :) 
 
 ## What is the Task?
 the repository will include the following sub tasks:

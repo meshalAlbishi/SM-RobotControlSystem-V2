@@ -1,5 +1,8 @@
 <?php
 
+while (!file_exists('includes/dbConnection.inc.php'))
+    chdir('..');
+
 include_once("includes/dbConnection.inc.php");
 
 // motors functions
@@ -15,7 +18,6 @@ function getMotorsValue()
         return mysqli_fetch_all($result);
     }
 }
-
 
 function updateMotors()
 {
@@ -49,9 +51,7 @@ function getArmPower()
 
 function updatePower()
 {
-    echo 'hi';
     $data = $_POST['power'];
-    echo $data;
     $sql = "update arm set power = ($data) where arm_id=1;";
 
     mysqli_query($GLOBALS['conn'], $sql);

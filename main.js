@@ -25,13 +25,13 @@ function changeRangeValue(slidersValue, index, value) {
 
 function powerEvenet() {
     power.click(() => {
-        console.log("in");
+
         var isOn = $('#power').is(":checked");
         $.ajax({
-            url: "includes/fetchLast.php",
+            url: "includes/fetchLastMotors.php",
             method: "POST",
             data: { power: isOn },
-            success: (data) => window.location.href = 'includes/fetchLast.php'
+            success: (data) => window.location.href = 'includes/fetchLastMotors.php'
         });
 
     });

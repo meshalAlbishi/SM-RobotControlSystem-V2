@@ -39,22 +39,26 @@ if (isset($_POST['submit'])) {
 
         <div class="main-base">
 
-            <!-- forward button -->
-            <div class="up">
-                <button class="remote-btn"><i class="far fa-arrow-alt-up"></i></button>
-            </div>
+            <form action="database/base.db.php" method="POST">
 
-            <!-- middle line buttons(left, stop, right) -->
-            <div class="middle">
-                <button class="remote-btn"><i class="far fa-arrow-alt-left"></i></button>
-                <button class="remote-btn stop-btn"><i class="far fa-stop-circle"></i></button>
-                <button class="remote-btn "><i class="far fa-arrow-alt-right"></i></button>
-            </div>
+                <!-- forward button -->
+                <div class="up">
+                    <button name="btnSubmit" value="F" type="submit" class="remote-btn"><i class="far fa-arrow-alt-up"></i></button>
+                </div>
 
-            <!-- backward button -->
-            <div class="down">
-                <button class="remote-btn "><i class="far fa-arrow-alt-down"></i></button>
-            </div>
+                <!-- middle line buttons(left, stop, right) -->
+                <div class="middle">
+                    <button name="btnSubmit" value="L" type="submit" class="remote-btn"><i class="far fa-arrow-alt-left"></i></button>
+                    <button name="btnSubmit" value="S" type="submit" class="remote-btn stop-btn"><i class="far fa-stop-circle"></i></button>
+                    <button name="btnSubmit" value="R" type="submit" class="remote-btn "><i class="far fa-arrow-alt-right"></i></button>
+                </div>
+
+                <!-- backward button -->
+                <div class="down">
+                    <button name="btnSubmit" value="B" type="submit" class="remote-btn "><i class="far fa-arrow-alt-down"></i></button>
+                </div>
+
+            </form>
 
         </div>
 

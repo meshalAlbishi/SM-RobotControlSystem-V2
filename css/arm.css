@@ -111,4 +111,16 @@ input[type="checkbox"]:checked::before {
     .header h1 {
         font-size: 1.75rem;
     }
+    .slider-box {
+        padding: 1rem 0;
+    }
+    .range {
+        margin: 0 0.5rem;
+        width: 170px;
+    }
+    .range-value {
+        padding: 5px;
+        width: 30px;
+        font-size: 1rem;
+    }
 }

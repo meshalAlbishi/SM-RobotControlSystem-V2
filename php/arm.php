@@ -20,7 +20,7 @@
 
                         <label for="engine<?php echo $engineValues[$i][0] ?>">Engine <?php echo $engineValues[$i][0] ?> </label>
 
-                        <input class="range" type="range" value="<?php echo $engineValues[$i][1] ?>" min="0" max="180" step="90" name="engine<?php echo $engineValues[$i][0] ?>">
+                        <input class="range" type="range" value="<?php echo $engineValues[$i][1] ?>" min="0" max="180" step="1" name="engine<?php echo $engineValues[$i][0] ?>">
 
                         <span class="range-value"><?php echo $engineValues[$i][1] ?></span>
 

@@ -14,7 +14,7 @@ the repository will include the following sub tasks:
 5. Design The UI to be a Mobile View also.
 
 
-# Database Design
+## Database Design
 The database contains 4 table
 1. Arm -> This table to monitor the power of the arm if it's (on/off)
 2. Motors -> This table to add the motor which containt the following:
